@@ -1,0 +1,318 @@
+
+
+.navbar {
+  box-shadow: 0 0 0 4px rgba(4, 5, 6, 7);
+}
+.img{
+  width: 100%;
+  height: 560px;
+}
+.vector-1,
+.vector-1 * {
+  box-sizing: border-box;
+}
+.vector-1 {
+  position: relative;
+  overflow: visible;
+}
+.text-box {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  text-align: left;
+}
+.cover h1 {
+  position: absolute;
+  top: 30%;
+  left: 30%; /* Mengatur posisi elemen h1 ke sisi kiri */
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.cover p {
+  position: absolute;
+  top: 40%;
+  left: 30%; /* Mengatur posisi elemen p ke sisi kiri */
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.cover a {
+  position: absolute;
+  top: 50%;
+  left: 30%; /* Mengatur posisi elemen a ke sisi kiri */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #066163;
+  padding: 10px 30px;
+  font-size: 18px;
+  margin-top: 50px;
+  border-radius: 6px;
+}
+.cover a:hover{
+  color: #ffffff;
+  background-color: #f44336;
+}
+
+/*----------Card untuk man dan women------------*/
+.man{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 90px;
+}
+.row{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /*background: #CCF3EE;*/
+}
+.wrapper{
+  height: 400px;
+  width: 320px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  position: relative;
+}
+.latar{
+  background: #777;
+}
+.tulisan{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.wrapper .card{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  transform: translateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+  }
+.wrapper:hover > .front-face{
+  transform: rotateY(-180deg);
+}
+.wrapper .card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.wrapper .back-face{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+.wrapper:hover > .back-face{
+  transform: rotateY(0deg);
+}
+.wrapper .back-face img{
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+}
+.wrapper .back-face .info{
+  text-align: center;
+}
+.back-face .info .title{
+  font-size: 30px;
+  font-weight: 500;
+}
+.back-face ul{
+  display: flex;
+  align-items: left;
+}
+.back-face ul a{
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  margin: 0 5px;
+  line-height: 38px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+  transition: all 0.5s ease;
+}
+.back-face ul a:hover{
+  color: #1cc7d0;
+  border-color: #1cc7d0;
+  background: linear-gradient(375deg, transparent, transparent);
+}
+
+
+/*----------Faq's------------*/
+.faqs{
+  background: #CCF3EE;
+  padding-top: 20px;
+}
+.faqs h1{
+  text-align: center;
+}
+.faq-heading{
+  border-bottom: #777;
+  padding: 20px 60px;
+  background: #CCF3EE;
+}
+.faq-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #CCF3EE;
+}
+.hr{
+  width: 60%;
+  margin: auto;
+}
+.pertanyaan {
+  background-color: #FFF2F2; 
+  color: black;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.jawaban{
+  margin: auto;
+  text-align: center; 
+  width: 50%; 
+  padding: auto; 
+}
+.aktif,.pertanyaan:hover {
+  background-color: #F9F9F9;
+}
+.jawaban {
+  padding: 0 18px;
+  background-color: #FAD4D4;
+  display: none;
+  overflow: hidden;
+}
+.pertanyaan:after {
+  content: '+';
+  font-size: 40px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.aktif:after {
+  content: "-";
+  font-size: 40px;
+}
+
+
+/*----------Footer------------*/
+footer {
+  background: #066163;
+  padding: 50px 20px;
+}
+.About{
+  text-align: center;
+}
+footer .kontak{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+footer .ftr h3 {
+  font-size: 1.4em;
+  margin-bottom: 1.3em;
+  color: black;
+}
+footer .bawah {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+footer .bawah a {
+  text-decoration: none;
+  color:black;
+  opacity: .6;
+  line-height: 30px;
+  transition: 3s ease opacity;
+}
+.kontak {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+.kontak ul li {
+  list-style: none;
+}
+.kontak ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.kontak ul li ::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.kontak ul li :hover::after{
+  width: 100%;
+}
+
+/*------- BIODATA -------*/
+.profile{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #096fd3;
+  padding: 12px;
+}
+.profile img{
+  width: 100%;
+}
+.profile h2{
+  margin: 25px 0px 10px 0px;
+  font-weight: 500;
+}
+.biodata-img {
+  height: 20%;
+  top: 100px;
+  width: 20%;
+  right: 30px;
+  text-align: center;
+  margin-left: 550px;
+}
+.biodata {
+  text-align: center;
+  color: black;
+}
+.biodata h1 {
+  margin-left: 20px;
+}
